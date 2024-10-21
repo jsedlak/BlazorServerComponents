@@ -1,0 +1,9 @@
+﻿<input type="checkbox" @bind:get="is_checked" @bind:set="Set" />
+is_checked:@is_checked
+@code {
+    bool is_checked = false;
+    void Set(bool v)
+    {
+        is_checked = v;
+    }
+}

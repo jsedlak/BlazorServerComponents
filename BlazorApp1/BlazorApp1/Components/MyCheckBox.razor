@@ -1,0 +1,12 @@
+﻿<p>
+    <input type="checkbox" id="MyCB" @bind:get="is_checked" @bind:set="Set" />
+    <label for="MyCB">My Checkbox</label>
+</p>
+<pre>is_checked:@is_checked</pre>
+@code {
+    bool is_checked = false;
+    void Set(bool v)
+    {
+        is_checked = v;
+    }
+}

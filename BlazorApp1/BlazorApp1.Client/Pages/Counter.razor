@@ -1,0 +1,13 @@
+﻿@page "/counter"
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender: false))
+@inject HttpClient Client
+<B />
+@code {
+    //private HttpClient _client;
+
+    protected override void OnInitialized()
+    {
+        //_client = Factory.CreateClient();
+        base.OnInitialized();
+    }
+}

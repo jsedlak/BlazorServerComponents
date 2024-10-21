@@ -1,0 +1,16 @@
+﻿@page "/"
+@rendermode InteractiveServer 
+<MyCheckBox/>
+
+<div style="padding:30px;">
+    <pre>A Type: [Base]=@(typeof(A).BaseType.FullName)</pre>
+    <A />
+</div>
+<div style="padding:30px;">
+    <pre>A2 Type: [Base]=@(typeof(A2).BaseType.FullName)</pre>
+    <A2 @rendermode="InteractiveServer" />
+</div>
+<div style="padding:30px;">
+    <pre>A3 Type: [Base]=@(typeof(A3).BaseType.FullName)</pre>
+    <A3 @rendermode="InteractiveServer" />
+</div>
